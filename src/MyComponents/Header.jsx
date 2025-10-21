@@ -12,9 +12,9 @@ const Header = () => {
 
   return (
     <header className='w-full'>
-        <div className={`p-5 w-[60%] h-[100vh] bg-[#1D1C1D]/70 backdrop-blur-md transition-all duration-900 overflow-hidden absolute ${toggle ?  'md:hidden -translate-x-0' : '-translate-x-[100%] '}`}>
+        <div className={`p-5 w-[60%] sm:w-[45%] h-[100vh] bg-[#1D1C1D]/70 backdrop-blur-md transition-all duration-900 overflow-hidden absolute ${toggle ?  'md:hidden -translate-x-0' : '-translate-x-[100%]'}`}>
 
-            <div onClick={openNav} className='w-fit ml-auto'><FaTimes color='black' size={20} /></div>
+            <div onClick={openNav} className='w-fit ml-auto'><FaTimes color='white' size={30} /></div>
 
             <nav className='flex items-center justify-center'>
                 <ul className='flex flex-col gap-4 text-lg text-white'>
@@ -37,7 +37,7 @@ const Header = () => {
                     </ul>
                 </nav>
                 
-                <div onClick={openNav} className='text-3xl md:hidden text-white'><HiMenuAlt3 color='black' size={20} /></div>
+                <div onClick={openNav} className='text-3xl md:hidden text-white'><HiMenuAlt3 color='white' size={30} /></div>
             </div>
             <div className='rounded-full px-4 py-2 text-xl text-white font-bold bg-[#EC7E28]'>+1 (234) 567-8910</div>
         </div>

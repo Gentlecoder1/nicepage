@@ -23,13 +23,13 @@ const Solutions = () => {
 
   return (
     <div className='w-full bg-pink-100 py-10'>
-        <div className='max-w-[1200px] text-center md:text-left mx-auto space-y-7 md:space-y-0 md:flex md:gap-6 lg:gap-20 py-4 px-8 items-center justify-between'>
+        <div className='max-w-[1200px] text-center md:text-left mx-auto space-y-7 md:space-y-0 md:flex md:gap-6 lg:gap-14 xl:gap-20 py-4 px-8 items-center justify-between'>
 
             <div className='space-y-4 md:space-y-14 w-[100%] md:w-[50%] lg:mb-20 flex flex-col items-center md:block'>
                 <div className=''>
                     <h1 className='mb-6 text-4xl lg:text-5xl font-[700]'>Innovative App Development Solutions</h1>
 
-                    <p className='mb-3 md:text-[18px] text-[16px] font-[400]'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                    <p className='mb-3 md:text-[18px] text-[16px] font-[500]'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
                 </div>
                 <div
                     // to="/SignUp"
@@ -48,7 +48,7 @@ const Solutions = () => {
                             <TbCircleCheckFilled size={60} color='#EC7E28'/>
                             <h1 className='font-bold text-xl'>{Goal.title}</h1>
 
-                            <p className='mb-3 md:text-[18px] text-[16px] font-[400]'>{Goal.text}</p>
+                            <p className='mb-3 md:text-[18px] text-[16px] font-[500]'>{Goal.text}</p>
                         </div>
                     ))}
                 </div>

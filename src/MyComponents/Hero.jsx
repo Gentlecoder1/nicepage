@@ -1,3 +1,4 @@
+import React, {useState} from 'react'
 import Header from '../MyComponents/Header'
 import Hero1 from '../assets/Hero1.png'
 import HeroPerson from '../assets/hero-person.jpg'
@@ -6,6 +7,14 @@ import { motion } from "framer-motion";
 
 // data-aos-delay="200" 
 const Hero = () => {
+    const [count, setCount] = useState(0)
+
+    const Statistics = () => {
+        setCount({
+            count: ({from: 0, to: 800})
+        })
+    }
+
   return (
     <div className='w-full bg-indigo-950'>
         <Header />
@@ -57,11 +66,11 @@ const Hero = () => {
 
                     <div className='rounded-3xl bg-green-500 p-5 space-y-10 text-center'>
                         <div className='space-y-4 text-white'>
-                            <h1 className=' text-2xl md:text-4xl lg:text-5xl font-[900]'>800k+</h1>
+                            <h1 className='text-2xl md:text-4xl lg:text-5xl font-[900]'>{Statistics.count}k+</h1>
                             <p className='font-bold text-xl'>App Downloaded</p>
                         </div>
                         <div className='space-y-4 text-white'>
-                            <h1 className=' text-2xl md:text-4xl lg:text-5xl font-[900]'>70k+</h1>
+                            <h1 className='text-2xl md:text-4xl lg:text-5xl font-[900]'>{Statistics.count}k+</h1>
                             <p className='font-bold text-xl'>Total Active Users</p>
                         </div>
                     </div>

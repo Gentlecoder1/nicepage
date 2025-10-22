@@ -10,7 +10,7 @@ const Hero = () => {
     <div className='w-full bg-indigo-950'>
         <Header />
 
-        <div className='max-w-[1200px] text-center md:text-left mx-auto md:flex py-4 px-8 items-center justify-between'>
+        <div className='max-w-[1200px] text-center md:text-left mx-auto md:flex py-4 px-8 items-center space-y-7 md:space-y-0 justify-between'>
             
             <div className='space-y-4 md:space-y-14 w-[100%] md:w-[45%] lg:mb-20 flex flex-col items-center md:block'>
                 <div className='text-white'>
@@ -18,7 +18,7 @@ const Hero = () => {
                         initial={{ opacity: 0 , x: -320 }} 
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 3.4, delay: 0.17, ease: [0.22, 0.9, 0.19, 1] }}>
-                        <h1 className='mb-6 text-4xl sm:text-5xl lg:text-7xl font-[700]' data-aos="fade-right">Powerful Apps for Growth</h1>
+                        <h1 className='mb-6 text-4xl sm:text-5xl lg:text-7xl font-[700]'>Powerful Apps for Growth</h1>
                     </motion.div>
 
                     <p className='mb-3 md:text-[18px] text-[13px] font-[400]'>At vero eos et accusam et justo do dolores et ea rebum stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>

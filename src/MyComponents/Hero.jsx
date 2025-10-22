@@ -2,6 +2,8 @@ import Header from '../MyComponents/Header'
 import Hero1 from '../assets/Hero1.png'
 import HeroPerson from '../assets/hero-person.jpg'
 import { MdStar } from "react-icons/md";
+import { motion } from "framer-motion";
+
 // data-aos-delay="200" 
 const Hero = () => {
   return (
@@ -12,13 +14,19 @@ const Hero = () => {
             
             <div className='space-y-4 md:space-y-14 w-[100%] md:w-[45%] lg:mb-20 flex flex-col items-center md:block'>
                 <div className='text-white'>
-                    <h1 className='mb-6 text-4xl sm:text-5xl lg:text-7xl font-[700]'>Powerful Apps for Growth</h1>
+                    <motion.div
+                        initial={{ opacity: 0 , x: -320 }} 
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 3.4, delay: 0.17, ease: [0.22, 0.9, 0.19, 1] }}>
+                        <h1 className='mb-6 text-4xl sm:text-5xl lg:text-7xl font-[700]' data-aos="fade-right">Powerful Apps for Growth</h1>
+                    </motion.div>
 
                     <p className='mb-3 md:text-[18px] text-[13px] font-[400]'>At vero eos et accusam et justo do dolores et ea rebum stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
                 </div>
                 <div
                     // to="/SignUp"
                     // onMouseEnter={() => import('./SignUp.jsx')}
+                    
                     className="bg-[#EC7E28] w-fit h-fit text-white rounded-full px-8 py-2 transition-all duration-300 transform hover:scale-105 flex items-center mx-auto md:mx-0 mt-3 md:mt-0"
                 >
                     Get Started
@@ -26,9 +34,14 @@ const Hero = () => {
             </div>
             
             <div className='md:flex md:w-[54%] lg:w-[50%] w-[100%] md:gap-5 lg:gap-16 space-y-5 md:space-y-0'>
-                <div className='w-[130px] h-[250px] md:w-[320px] md:h-[400px] lg:w-full lg:h-full mx-auto'>
+                <motion.div
+                    initial={{ opacity: 0 , y: 320 }} 
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 3.4, delay: 0.17, ease: [0.22, 0.9, 0.19, 1] }}
+                    className='w-[130px] h-[250px] md:w-[320px] md:h-[400px] lg:w-full lg:h-full mx-auto'
+                >
                     <img src={Hero1} className='w-full h-full' alt="hero" />
-                </div>
+                </motion.div>
 
                 <div className='space-y-14'>
                     <div className='text-white space-y-4'>

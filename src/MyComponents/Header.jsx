@@ -26,7 +26,7 @@ const Header = () => {
             </nav>
         </div>
 
-        <div className='max-w-[1200px] mx-auto my-5 flex py-4 px-8 items-center justify-between'>
+        <div className='max-w-[1200px] mx-auto mb-5 flex py-4 px-8 items-center justify-between'>
             <div className=''>
                 <nav className='hidden md:flex items-center'>
                     <ul className='flex gap-8 text-lg text-white'>

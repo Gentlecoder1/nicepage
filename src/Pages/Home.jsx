@@ -5,7 +5,7 @@ import Partners from '../MyComponents/Partners'
 function Home() {
   
   return (
-    <div className=''>
+    <div className='h-full'>
       <Hero />
       <Partners />
     </div>

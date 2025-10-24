@@ -7,6 +7,7 @@ import Implement from '../MyComponents/Implement'
 import Subscriptions from '../MyComponents/Subscriptions'
 import Testimonials from '../MyComponents/Testimonials'
 import CTA from '../MyComponents/CTA'
+import Footer from '../MyComponents/Footer'
 
 
 function Home() {
@@ -21,6 +22,7 @@ function Home() {
       <Subscriptions />
       <Testimonials />
       <CTA />
+      <Footer />
     </div>
   )
 }

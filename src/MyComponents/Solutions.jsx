@@ -22,7 +22,7 @@ const Solutions = () => {
     ]
 
   return (
-    <div className='w-full bg-pink-100 py-10'>
+    <div className='w-full bg-[#FCF1E9] py-10'>
         <div className='max-w-[1200px] text-center md:text-left mx-auto space-y-7 md:space-y-0 md:flex md:gap-6 lg:gap-14 xl:gap-20 py-4 px-8 items-center justify-between'>
 
             <div className='space-y-4 md:space-y-14 w-[100%] md:w-[50%] lg:mb-20 flex flex-col items-center md:block'>

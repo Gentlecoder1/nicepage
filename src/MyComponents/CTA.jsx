@@ -4,7 +4,7 @@ const CTA = () => {
   return (
     <div className='w-full py-18 bg-indigo-950'>
         <div className='max-w-[1200px] mx-auto flex px-8 justify-center items-center'>
-            <div className='space-y-10 text-white text-center'>
+            <div data-aos="zoom-in-up" className='space-y-10 text-white text-center'>
                 <div>
                     <h1 className='mb-6 text-3xl lg:text-5xl font-[700]'>Get started today. <br />Get more for your money.</h1>
 

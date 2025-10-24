@@ -4,16 +4,10 @@ import Hero1 from '../assets/Hero1.png'
 import HeroPerson from '../assets/hero-person.jpg'
 import { MdStar } from "react-icons/md";
 import { motion } from "framer-motion";
+import CountUp from 'react-countup';
 
 // data-aos-delay="200" 
 const Hero = () => {
-    const [count, setCount] = useState(0)
-
-    const Statistics = () => {
-        setCount({
-            count: ({from: 0, to: 800})
-        })
-    }
 
   return (
     <div className='w-full bg-indigo-950'>
@@ -66,11 +60,11 @@ const Hero = () => {
 
                     <div className='rounded-3xl bg-green-500 p-5 space-y-10 text-center'>
                         <div className='space-y-4 text-white'>
-                            <h1 className='text-2xl md:text-4xl lg:text-5xl font-[900]'>{Statistics.count}k+</h1>
+                            <h1 className='text-2xl md:text-4xl lg:text-5xl font-[900]'><CountUp end={800} />k+</h1>
                             <p className='font-bold text-xl'>App Downloaded</p>
                         </div>
                         <div className='space-y-4 text-white'>
-                            <h1 className='text-2xl md:text-4xl lg:text-5xl font-[900]'>{Statistics.count}k+</h1>
+                            <h1 className='text-2xl md:text-4xl lg:text-5xl font-[900]'><CountUp end={70} />k+</h1>
                             <p className='font-bold text-xl'>Total Active Users</p>
                         </div>
                     </div>

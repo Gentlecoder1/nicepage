@@ -1,5 +1,6 @@
 import React from 'react'
 import { TbCircleCheckFilled } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 const Solutions = () => {
     const Goals = [
@@ -44,11 +45,26 @@ const Solutions = () => {
             <div className='md:flex md:w-[50%] w-[100%]'>
                 <div className='gap-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2'>
                     {Goals.map((Goal, idx) => (
-                        <div key={idx} className='flex flex-col items-center md:block rounded-3xl bg-white p-5 space-y-4 text-center md:text-left'>
-                            <TbCircleCheckFilled size={60} color='#EC7E28'/>
-                            <h1 className='font-bold text-xl'>{Goal.title}</h1>
+                        <div style={{ perspective: 1200 }}>
+                            <motion.div key={idx}
+                                whileInView={{ rotateX: [0, -50, 0, 90, 0, -60, 0, 60, 0, -20, 0, 20, 0] }}
+                                viewport={{ once: false }}
+                                transition={{ 
+                                    duration: 3.2,
+                                    times: [0, 0.06, 0.12, 0.24, 0.36, 0.50, 0.62, 0.74, 0.82, 0.88, 0.94, 0.98, 1],
+                                    ease: "easeOut"
+                                }}
+                                style={{
+                                    transformStyle: 'preserve-3d',
+                                    WebkitTransformStyle: 'preserve-3d',
+                                    willChange: 'transform'
+                                }} 
+                                className='h-full flex flex-col items-center md:block rounded-3xl bg-white p-5 space-y-4 text-center md:text-left'>
+                                <TbCircleCheckFilled size={60} color='#EC7E28'/>
+                                <h1 className='font-bold text-xl'>{Goal.title}</h1>
 
-                            <p className='mb-3 md:text-[18px] text-[16px] font-[500]'>{Goal.text}</p>
+                                <p className='mb-3 md:text-[18px] text-[16px] font-[500]'>{Goal.text}</p>
+                            </motion.div>
                         </div>
                     ))}
                 </div>

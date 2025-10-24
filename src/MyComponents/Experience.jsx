@@ -34,13 +34,37 @@ const Experience = () => {
                 <div>
                     <div className='gap-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2'>
                         {Digitals.map((Digital, idx) => (
-                            <div key={idx} className='flex flex-col items-center md:block rounded-3xl bg-gray-200 p-5 space-y-4 text-center md:text-left'>
-                                <div className='w-10 h-10'>
-                                    <img src={Digital.image} alt={Digital.name} className='' />
-                                </div>
-                                <h1 className='font-bold text-xl'>{Digital.title}</h1>
-    
-                                <p className='mb-3 md:text-[18px] text-[16px] font-[500]'>{Digital.text}</p>
+                            <div style={{ perspective: 1200 }}>
+                                <motion.div key={idx}
+                                    whileInView={{ rotateX: [0, -50, 0, 90, 0, -60, 0, 60, 0, -20, 0, 20, 0] }}
+                                    viewport={{ once: false }}
+                                    transition={{ 
+                                        duration: 3.2,
+                                        times: [0, 0.06, 0.12, 0.24, 0.36, 0.50, 0.62, 0.74, 0.82, 0.88, 0.94, 0.98, 1],
+                                        ease: "easeOut"
+                                    }}
+                                    style={{
+                                        transformStyle: 'preserve-3d',
+                                        WebkitTransformStyle: 'preserve-3d',
+                                        willChange: 'transform'
+                                    }}
+                                    className='h-full flex flex-col items-center md:block rounded-3xl bg-gray-200 p-5 space-y-4 text-center md:text-left'>
+                                    <div className='w-10 h-10'style={{
+                                        backfaceVisibility: 'hidden',
+                                        WebkitBackfaceVisibility: 'hidden'
+                                    }}>
+                                        <img src={Digital.image} alt={Digital.name} className='' />
+                                    </div>
+                                    <h1 className='font-bold text-xl' style={{
+                                        backfaceVisibility: 'hidden',
+                                        WebkitBackfaceVisibility: 'hidden'
+                                    }}>{Digital.title}</h1>
+        
+                                    <p className='mb-3 md:text-[18px] text-[16px] font-[500]' style={{
+                                        backfaceVisibility: 'hidden',
+                                        WebkitBackfaceVisibility: 'hidden'
+                                    }}>{Digital.text}</p>
+                                </motion.div>
                             </div>
                         ))}
                     </div>

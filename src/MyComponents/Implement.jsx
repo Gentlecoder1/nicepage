@@ -22,7 +22,7 @@ const Implement = () => {
     ]
 
     return (
-        <div className='w-full'>
+        <div className='w-full overflow-hidden'>
             {Steps.map((step, idx) => (
                 <div key={idx} className={`w-full py-18 ${idx == 0 ? 'bg-[#FCF1E9]' : 'bg-indigo-950'}`}>
                     <div className={`max-w-[1200px] mx-auto space-y-10 md:space-y-0 md:gap-6 lg:gap-14 px-8 justify-between items-center ${idx == 0 ? 'text-black  flex flex-col md:flex-row' : 'text-white flex flex-col-reverse md:flex-row-reverse '}`}>
@@ -43,10 +43,10 @@ const Implement = () => {
                                 {step.button}
                             </div>
                         </div>
-
+                
                         {idx == 0 ? 
                             <motion.div
-                                initial={{ opacity: 0 , x: 350 }} 
+                                initial={{ opacity: 0 , x: '100%' }} 
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: false }}
                                 transition={{ duration: 3.4, delay: 0.17, ease: [0.22, 0.9, 0.19, 1] }}

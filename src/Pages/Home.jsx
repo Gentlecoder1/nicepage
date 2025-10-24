@@ -6,6 +6,7 @@ import Experience from '../MyComponents/Experience'
 import Implement from '../MyComponents/Implement'
 import Subscriptions from '../MyComponents/Subscriptions'
 import Testimonials from '../MyComponents/Testimonials'
+import CTA from '../MyComponents/CTA'
 
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
       <Implement />
       <Subscriptions />
       <Testimonials />
+      <CTA />
     </div>
   )
 }

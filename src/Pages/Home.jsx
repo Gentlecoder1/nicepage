@@ -1,5 +1,5 @@
 import Aos from 'aos'
-import Hero from '../MyComponents/Hero'
+import Hero from '../MyComponents/Home-Hero'
 import Partners from '../MyComponents/Partners'
 import Solutions from '../MyComponents/Solutions'
 import Experience from '../MyComponents/Experience'

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Header from '../MyComponents/Header'
+import Header from './Header'
 import Hero1 from '../assets/Hero1.png'
 import HeroPerson from '../assets/hero-person.jpg'
 import { MdStar } from "react-icons/md";

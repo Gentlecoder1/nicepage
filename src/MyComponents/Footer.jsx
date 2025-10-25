@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <div className='w-full bg-[#FCF1E9] py-10'>
         <div className='max-w-[1200px] mx-auto md:flex justify-between space-y-7 md:space-y-0 md:gap-6 py-4 px-8'>
-          <div className='space-y-4 md:space-y-14 w-[100%] md:w-[50%] lg:mb-20 flex flex-col items-center md:block'>
-              <h1 className='mb-6 text-4xl sm:text-5xl lg:text-7xl font-[700] w-[100%] md:w-[95%]'>Professional and reliable!</h1>
+          <div className='space-y-4 md:space-y-14 w-[100%] md:w-[45%] flex flex-col'>
+              <h1 className='mb-6 text-3xl sm:text-4xl lg:text-5xl font-[700] w-[100%] md:w-[85%]'>Professional and reliable!</h1>
 
               <p className='mb-3 md:text-[18px] text-[13px] font-[400]'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
           </div>
 
-          <div className='flex flex-col md:flex-row gap-16 w-[100%] md:w-[40%]'>
+          <div className='flex flex-col md:flex-row gap-16 w-[100%] md:w-[50%]'>
             <div className='space-y-6'>
               <h1 className='text-xl font-semibold'>Company</h1>
 
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
       </div>
     </div>
-  )
+  ) 
 }
 
 export default Footer

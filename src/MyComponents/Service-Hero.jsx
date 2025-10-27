@@ -30,7 +30,7 @@ const Hero = () => {
                     initial={{ opacity: 0 , x: "100%" }} 
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 3.4, delay: 0.17, ease: [0.22, 0.9, 0.19, 1] }}
-                    className='w-[130px] h-[250px] md:w-[320px] md:h-[400px] lg:w-full lg:h-full mx-auto'
+                    className=' mx-auto'
                 >
                     <img src={Hero1} className='w-full h-full' alt="hero" />
                 </motion.div>

@@ -3,6 +3,7 @@ import Hero from '../MyComponents/Service-Hero'
 import Idea from '../assets/4.png'
 import Design from '../assets/5.png'
 import Launch from '../assets/6.png'
+import Testing from '../assets/testing-img.png'
 import Experience from '../MyComponents/Service-Experience'
 import Implement from '../MyComponents/Implement'
 import Footer from '../MyComponents/Footer'
@@ -25,6 +26,17 @@ const Services = () => {
             image: Launch
         }
     ]
+
+    const customSteps = [
+        {
+            title: 'Development and Testing',
+            topic: 'Building Future-Ready Applications',
+            text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+            image: Testing,
+            button: 'Our Contact'
+        }
+    ]
+
   return (
     <div className='h-full'>
       <Hero />
@@ -44,7 +56,7 @@ const Services = () => {
       </div>
 
       <Experience />
-      <Implement />
+      <Implement Steps={customSteps} />
       <Footer />
     </div>
   )

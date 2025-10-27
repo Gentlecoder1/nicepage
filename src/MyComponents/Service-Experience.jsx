@@ -1,7 +1,6 @@
 import React from 'react'
 import encrypt from '../assets/encrypt.png'
 import key from '../assets/key.png'
-import Seamless from '../assets/seamless-img.png'
 import { motion } from "framer-motion";
 
 const Experience = () => {
@@ -27,13 +26,13 @@ const Experience = () => {
     ]
 
   return (
-    <div className='w-full py-18 h-[1100px] md:h-full lg:h-[670px] overflow-clip'>
+    <div className='w-full py-18'>
         <div className='max-w-[1200px] text-center md:text-left mx-auto space-y-10 md:space-y-0 md:flex flex-row-reverse md:gap-6 lg:gap-14 px-8 justify-between'>
             <div className='space-y-4 md:space-y-10 w-[100%] flex flex-col items-center md:items-start'>
                 <div className='flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 items-center'>
                     <h1 className='md:max-w-[50%] text-3xl md:text-4xl lg:text-5xl font-[700]'>Seamless Digital Experience Design</h1>
 
-                    <p className='md:max-w-[50%] bg-red-500 mb-3 md:text-[18px] text-[16px] font-[500]'>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <p className='md:max-w-[50%] mb-3 md:text-[18px] text-[16px] font-[500]'>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 </div>
 
                 <div>

@@ -3,23 +3,24 @@ import Testing from '../assets/testing-img.png'
 import Development from '../assets/development-img.png'
 import { motion } from "framer-motion";
 
-const Implement = () => {
-    const Steps = [
-        {
-            title: 'Development and Testing',
-            topic: 'Building Future-Ready Applications',
-            text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-            image: Testing,
-            button: 'Our Contact'
-        },
-        {
-            title: 'Launch and Support',
-            topic: 'Custom Mobile App Development',
-            text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-            image: Development,
-            button: 'Our Contact'
-        }
-    ]
+const defaultSteps = [
+    {
+        title: 'Development and Testing',
+        topic: 'Building Future-Ready Applications',
+        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+        image: Testing,
+        button: 'Our Contact'
+    },
+    {
+        title: 'Launch and Support',
+        topic: 'Custom Mobile App Development',
+        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+        image: Development,
+        button: 'Our Contact'
+    }
+]
+
+const Implement = ({ Steps = defaultSteps }) => {
 
     return (
         <div className='w-full overflow-hidden'>

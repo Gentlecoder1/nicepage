@@ -3,6 +3,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Home from './Pages/Home'
 import Services from './Pages/Services'
+import About from './Pages/About'
 
 function App() {
   useEffect(() => {
@@ -11,7 +12,9 @@ function App() {
 
   return (
     <>
-      <Services />
+      {/* <Home />
+      <Services /> */}
+      <About />
     </>
   )
 }

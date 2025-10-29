@@ -4,6 +4,7 @@ import 'aos/dist/aos.css'
 import Home from './Pages/Home'
 import Services from './Pages/Services'
 import About from './Pages/About'
+import Contact from './Pages/Contact'
 
 function App() {
   useEffect(() => {
@@ -13,8 +14,9 @@ function App() {
   return (
     <>
       {/* <Home />
-      <Services /> */}
-      <About />
+      <Services />
+      <About /> */}
+      <Contact />
     </>
   )
 }

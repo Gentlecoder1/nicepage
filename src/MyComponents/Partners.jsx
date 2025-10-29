@@ -16,7 +16,7 @@ const Partners = () => {
     ]
 
   return (
-    <div className='w-full'>
+    <div className='w-full bg-white'>
         <div className='max-w-[1200px] text-center mx-auto md:flex flex-col py-16 px-8 items-center space-y-10'>
             <h1 className='text-black text-xl font-bold'>Trusted Development Partners for Long-Term Success and Innovative Digital Solutions</h1>
 

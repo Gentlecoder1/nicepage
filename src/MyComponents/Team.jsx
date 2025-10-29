@@ -24,7 +24,7 @@ const Team = () => {
 
 
   return (
-    <div className='w-full py-18'>
+    <div className='w-full py-18 bg-white'>
         <div className='max-w-[1200px] text-center md:text-left mx-auto space-y-10 md:space-y-0 md:flex flex-row-reverse md:gap-6 lg:gap-14 px-8 justify-between'>
             <div className='space-y-4 md:space-y-10 w-[100%] flex flex-col items-center md:items-start'>
                 <div className='flex mx-auto items-center'>

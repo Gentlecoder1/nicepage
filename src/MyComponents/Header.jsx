@@ -11,16 +11,16 @@ const Header = () => {
 
   return (
     <header className='w-full'>
-        <div className={`p-5 w-[60%] sm:w-[45%] h-[100vh] bg-[#1D1C1D]/70 backdrop-blur-md transition-all duration-900 overflow-hidden absolute ${toggle ?  'md:hidden -translate-x-0' : '-translate-x-[100%]'}`}>
+        <div className={`p-5 w-[60%] sm:w-[45%] h-[100vh] bg-[#1D1C1D]/70 backdrop-blur-md transition-all duration-900 overflow-hidden fixed ${toggle ?  'md:hidden -translate-x-0' : '-translate-x-[100%]'}`}>
 
             <div onClick={openNav} className='w-fit ml-auto'><FaTimes color='white' size={30} /></div>
 
             <nav className='flex items-center justify-center'>
                 <ul className='flex flex-col gap-4 text-lg text-white'>
-                    <li><a className='hover:text-gray-500' href="#">Home</a></li>
-                    <li><a className='hover:text-gray-500' href="#">About</a></li>
-                    <li><a className='hover:text-gray-500' href="#">Services</a></li>
-                    <li><a className='hover:text-gray-500' href="#">Contact</a></li>
+                    <li><a className='hover:text-gray-500' href="/Home">Home</a></li>
+                    <li><a className='hover:text-gray-500' href="/About">About</a></li>
+                    <li><a className='hover:text-gray-500' href="/Services">Services</a></li>
+                    <li><a className='hover:text-gray-500' href="/Contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,10 +29,10 @@ const Header = () => {
             <div className=''>
                 <nav className='hidden md:flex items-center'>
                     <ul className='flex gap-8 text-lg text-white'>
-                        <li><a className='hover:text-gray-500' href="#">Home</a></li>
-                        <li><a className='hover:text-gray-500' href="#">About</a></li>
-                        <li><a className='hover:text-gray-500' href="#">Services</a></li>
-                        <li><a className='hover:text-gray-500' href="#">Contact</a></li>
+                        <li><a className='hover:text-gray-500' href="/Home">Home</a></li>
+                        <li><a className='hover:text-gray-500' href="/About">About</a></li>
+                        <li><a className='hover:text-gray-500' href="/Services">Services</a></li>
+                        <li><a className='hover:text-gray-500' href="/Contact">Contact</a></li>
                     </ul>
                 </nav>
                 

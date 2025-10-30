@@ -44,7 +44,7 @@ const Need = () => {
                     <h1 className='lg:text-[56px] text-[36px] font-bold'>Need Help?</h1>
                     <div className='md:space-y-5 space-x-8 md:space-x-0 flex md:block'>
                         {helps.map((help) => (
-                            <div className='space-y-4 flex flex-col items-center md:items-start'>
+                            <div className='space-y-4 flex flex-col lg:flex-row space-x-5 items-center md:items-start'>
                                 <div className='rounded-full w-fit bg-[#2CCD52] p-5'>{help.image}</div>
 
                                 <div className='text-center md:text-left'>

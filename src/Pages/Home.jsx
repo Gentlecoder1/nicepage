@@ -1,4 +1,3 @@
-import Aos from 'aos'
 import Hero from '../MyComponents/Home-Hero'
 import Partners from '../MyComponents/Partners'
 import Solutions from '../MyComponents/Solutions'

@@ -3,7 +3,6 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { FaTimes } from "react-icons/fa";
 
 const Header = () => {
-
     const [toggle, setToggle] = useState(false)
 
     const openNav = () => {

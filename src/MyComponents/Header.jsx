@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { NavLink } from 'react-router-dom'
 import { HiMenuAlt3 } from "react-icons/hi";
 import { FaTimes } from "react-icons/fa";
 
@@ -16,12 +17,20 @@ const Header = () => {
 
             <div onClick={closeNav} className='w-fit ml-auto'><FaTimes color='white' size={30} /></div>
 
-            <nav className='flex items-center justify-center' onClick={e => e.stopPropagation()}>
+                <nav className='flex items-center justify-center' onClick={e => e.stopPropagation()}>
                 <ul className='flex flex-col gap-4 text-lg text-white'>
-                    <li><a className='hover:text-gray-500' href="/Home">Home</a></li>
-                    <li><a className='hover:text-gray-500' href="/About">About</a></li>
-                    <li><a className='hover:text-gray-500' href="/Services">Services</a></li>
-                    <li><a className='hover:text-gray-500' href="/Contact">Contact</a></li>
+                    <li>
+                        <NavLink to="/Home" onClick={closeNav} className={({isActive}) => isActive ? 'text-[#EC7E28]' : 'hover:text-gray-500'}>Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/About" onClick={closeNav} className={({isActive}) => isActive ? 'text-[#EC7E28]' : 'hover:text-gray-500'}>About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/Services" onClick={closeNav} className={({isActive}) => isActive ? 'text-[#EC7E28]' : 'hover:text-gray-500'}>Services</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/Contact" onClick={closeNav} className={({isActive}) => isActive ? 'text-[#EC7E28]' : 'hover:text-gray-500'}>Contact</NavLink>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -38,10 +47,18 @@ const Header = () => {
             <div className=''>
                 <nav className='hidden md:flex items-center'>
                     <ul className='flex gap-8 text-lg text-white'>
-                        <li><a className='hover:text-gray-500' href="/Home">Home</a></li>
-                        <li><a className='hover:text-gray-500' href="/About">About</a></li>
-                        <li><a className='hover:text-gray-500' href="/Services">Services</a></li>
-                        <li><a className='hover:text-gray-500' href="/Contact">Contact</a></li>
+                        <li>
+                            <NavLink to="/Home" className={({isActive}) => isActive ? 'text-[#EC7E28]' : 'hover:text-gray-500'}>Home</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/About" className={({isActive}) => isActive ? 'text-[#EC7E28]' : 'hover:text-gray-500'}>About</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/Services" className={({isActive}) => isActive ? 'text-[#EC7E28]' : 'hover:text-gray-500'}>Services</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/Contact" className={({isActive}) => isActive ? 'text-[#EC7E28]' : 'hover:text-gray-500'}>Contact</NavLink>
+                        </li>
                     </ul>
                 </nav>
                 

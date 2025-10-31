@@ -18,10 +18,10 @@ const Footer = () => {
               <h1 className='text-xl font-semibold'>Company</h1>
 
               <ul className='flex flex-col space-y-2 text-lg text-[#EC7E28]'>
-                  <li><a className='hover:text-gray-500' href="#">Home</a></li>
-                  <li><a className='hover:text-gray-500' href="#">About</a></li>
-                  <li><a className='hover:text-gray-500' href="#">Services</a></li>
-                  <li><a className='hover:text-gray-500' href="#">Contact</a></li>
+                  <li><a className='hover:text-gray-500' href="/Home">Home</a></li>
+                  <li><a className='hover:text-gray-500' href="/About">About</a></li>
+                  <li><a className='hover:text-gray-500' href="/Services">Services</a></li>
+                  <li><a className='hover:text-gray-500' href="/Contact">Contact</a></li>
               </ul>
             </div>
 

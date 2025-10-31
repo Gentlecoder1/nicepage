@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../MyComponents/Header'
 import Need from '../MyComponents/Need'
+import scroll from '../assets/seamless.webp'
 import Footer from '../MyComponents/Footer'
 import { motion } from "framer-motion";
 

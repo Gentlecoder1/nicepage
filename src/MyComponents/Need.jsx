@@ -7,7 +7,7 @@ const Need = () => {
 
     const [open, setOpen] = useState(false)
     const toggle = (i) => {
-        setOpen(!open === i ? false : true)
+        setOpen(!open)
     }
 
     const accordion = [
@@ -38,7 +38,7 @@ const Need = () => {
     ]
 
     return(
-        <div className='w-full py-18'>
+        <div className='w-full py-18 bg-white'>
             <div className='max-w-[1200px] mx-auto px-8 md:flex xl:gap-30 gap-20 space-y-10 md:space-y-0'>
                 <div className='space-y-5 flex flex-col items-center md:items-start'>
                     <h1 className='lg:text-[56px] text-[36px] font-bold'>Need Help?</h1>

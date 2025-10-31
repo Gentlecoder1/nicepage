@@ -27,10 +27,7 @@ const Hero = () => {
                     <p className='mb-3 md:text-[18px] text-[13px] font-[400]'>At vero eos et accusam et justo do dolores et ea rebum stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
                 </div>
                 <div
-                    // to="/SignUp"
-                    // onMouseEnter={() => import('./SignUp.jsx')}
-                    
-                    className="bg-[#EC7E28] w-fit h-fit text-white rounded-full px-8 py-2 transition-all duration-300 transform hover:scale-105 flex items-center mx-auto md:mx-0 mt-3 md:mt-0"
+                    className="bg-[#EC7E28] w-fit h-fit text-white rounded-full px-8 py-2 transition-all duration-300 transform hover:scale-105 flex items-center mx-auto md:mx-0 mt-3 md:mt-0 cursor-pointer"
                 >
                     Get Started
                 </div>

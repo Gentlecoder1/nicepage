@@ -6,7 +6,7 @@ const Home = lazy(() => import('./Pages/Home'))
 const About = lazy(() => import('./Pages/About'))
 const Services = lazy(() => import('./Pages/Services'))
 const Contact = lazy(() => import('./Pages/Contact'))
-import { RingLoader } from "react-spinners";
+import { ClimbingBoxLoader } from "react-spinners";
 
 function App() {
   useEffect(() => {
@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Suspense fallback={<div className="p-8 h-[100vh] flex items-center justify-center text-center"><RingLoader size={58} color='#CBFE33' className='m-auto' /></div>}>
+        <Suspense fallback={<div className="p-8 h-[100vh] flex items-center justify-center text-center"><ClimbingBoxLoader size={18} color='#CBFE33' className='m-auto' /></div>}>
           <Routes>
             <Route index element={<Home />} />
             <Route path='/Home' element={<Home />} />

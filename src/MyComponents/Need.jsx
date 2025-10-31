@@ -5,10 +5,8 @@ import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 
 const Need = () => {
 
-    const [open, setOpen] = useState(false)
-    const toggle = (i) => {
-        setOpen(!open)
-    }
+    // track which accordion index is open (null = none)
+    const [openIndex, setOpenIndex] = useState(null)
 
     const accordion = [
         {
@@ -24,6 +22,7 @@ const Need = () => {
             answer: 'Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.'
         }
     ]
+
     const helps = [
         {
             image: <GiVibratingSmartphone size={40} color='white' />,
@@ -59,15 +58,21 @@ const Need = () => {
                 <div className='w-full md:max-w-[60%] space-y-3'>
                     <h1 className='text-[30px] font-bold'>FAQs</h1>
                     <div className='space-y-4'>
-                        {accordion.map((faq, idx) => (
-                            <div key={idx} className='border-b-2 border-black max-w-[600px] space-y-5'>
-                                <div key={idx} onClick={toggle} className='flex items-center justify-between cursor-pointer'>
-                                    <h1 className='text-[18px] font-bold'>{faq.question}</h1>
-                                    <span className={`transition-all duration-900`}>{open ? <TiArrowSortedDown size={30} /> : <TiArrowSortedUp size={30} />}</span>
+                        {accordion.map((faq, idx) => {
+                            const isOpen = openIndex === idx
+                            return (
+                                <div key={idx} className='border-b-2 border-black max-w-[600px] space-y-5'>
+                                    <div onClick={() => setOpenIndex(prev => (prev === idx ? null : idx))} className='flex items-center justify-between cursor-pointer'>
+                                        <h1 className='text-[18px] font-bold'>{faq.question}</h1>
+                                        <span className='transition-transform duration-500'>{isOpen ? <TiArrowSortedDown size={30} /> : <TiArrowSortedUp size={30} />}</span>
+                                    </div>
+
+                                    <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
+                                        <p className='text-[20px] font-semi-bold py-3'>{faq.answer}</p>
+                                    </div>
                                 </div>
-                                <p className={`transition-all duration-900 text-[20px] font-semi-bold ${open ? 'block' : 'hidden'}`}>{faq.answer}</p>
-                            </div>
-                        ))}
+                            )
+                        })}
                     </div>
                 </div>
             </div>

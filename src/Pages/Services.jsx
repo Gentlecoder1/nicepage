@@ -1,5 +1,5 @@
 import Hero from '../MyComponents/Service-Hero'
-import Hero1 from '../assets/Service-hero-img.png'
+import Hero1 from '../assets/service-hero-img.png'
 import Idea from '../assets/4.png'
 import Design from '../assets/5.png'
 import Launch from '../assets/6.png'

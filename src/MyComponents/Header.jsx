@@ -1,14 +1,18 @@
-import React, {useState} from 'react'
-import { NavLink } from 'react-router-dom'
+import React, {useState, useEffect} from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 import { HiMenuAlt3 } from "react-icons/hi";
 import { FaTimes } from "react-icons/fa";
 
 const Header = () => {
     const [toggle, setToggle] = useState(false)
 
-    const openNav = () => {
-        setToggle(!toggle)
-    }
+    const location = useLocation()
+    useEffect(() => {
+        // scroll immediately to top when pathname changes
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, [location.pathname])
+
+    const openNav = () => setToggle(!toggle)
     const closeNav = () => setToggle(false)
 
   return (

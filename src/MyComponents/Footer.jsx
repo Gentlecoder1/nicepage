@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { TiSocialFacebook} from "react-icons/ti";
 import { RiTwitterXLine } from "react-icons/ri";
 import { SlSocialInstagram } from "react-icons/sl";
@@ -18,10 +19,12 @@ const Footer = () => {
               <h1 className='text-xl font-semibold'>Company</h1>
 
               <ul className='flex flex-col space-y-2 text-lg text-[#EC7E28]'>
-                  <li><a className='hover:text-gray-500' href="/Home">Home</a></li>
-                  <li><a className='hover:text-gray-500' href="/About">About</a></li>
-                  <li><a className='hover:text-gray-500' href="/Services">Services</a></li>
-                  <li><a className='hover:text-gray-500' href="/Contact">Contact</a></li>
+                  <li>
+                    <NavLink className='hover:text-gray-500' to="/Home">Home</NavLink>
+                  </li>
+                  <li><NavLink className='hover:text-gray-500' to="/About">About</NavLink></li>
+                  <li><NavLink className='hover:text-gray-500' to="/Services">Services</NavLink></li>
+                  <li><NavLink className='hover:text-gray-500' to="/Contact">Contact</NavLink></li>
               </ul>
             </div>
 

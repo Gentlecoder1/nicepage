@@ -1,5 +1,6 @@
 import Hero from '../MyComponents/Service-Hero'
 import Hero1 from '../assets/service-hero-img.png'
+import Partners from '../MyComponents/Partners'
 import Idea from '../assets/4.png'
 import Design from '../assets/5.png'
 import Launch from '../assets/6.png'
@@ -8,6 +9,7 @@ import Experience from '../MyComponents/Service-Experience'
 import Implement from '../MyComponents/Implement'
 import Need from '../MyComponents/Need'
 import Footer from '../MyComponents/Footer'
+import { motion } from "framer-motion";
 
 const Services = () => {
 
@@ -43,6 +45,8 @@ const Services = () => {
     <div className='h-full'>
       <Hero company='Our Services' title='Transform Ideas into App' text='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.' image={Hero1}/>
 
+      <Partners/>
+
       <div className='w-full py-18 bg-[#FCF1E9]'>
         <div className='max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:px-8 px-18'>
             {Seconds.map((sec, idx) => (
@@ -51,7 +55,25 @@ const Services = () => {
                         <h1 className='lg:text-[26px] text-[20px] font-bold'>{sec.title}</h1>
                         <p className='md:text-[20px] text-[16px] font-[400]'>{sec.text}</p>
                     </div>
-                    <div className='lg:w-[90%] w-[80%] mx-auto'><img className='h-full w-full' src={sec.image} alt="" /></div>
+                    {idx == 1 ?
+                        <motion.div
+                            initial={{ opacity: 0 , y: -320 }} 
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: false }}
+                            transition={{ duration: 3.4, delay: 0.17, ease: [0.22, 0.9, 0.19, 1] }} 
+                            className='lg:w-[90%] w-[80%] mx-auto'>
+                            <img className='h-full w-full' src={sec.image} alt="" />
+                        </motion.div>
+                    :
+                        <motion.div
+                            initial={{ opacity: 0 , y: 320 }} 
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: false }}
+                            transition={{ duration: 3.4, delay: 0.17, ease: [0.22, 0.9, 0.19, 1] }} 
+                            className='lg:w-[90%] w-[80%] mx-auto'>
+                            <img className='h-full w-full' src={sec.image} alt="" />
+                        </motion.div>
+                    }
                 </div>
             ))}
         </div>
